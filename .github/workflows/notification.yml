@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Slack Notification
-      uses: rtCamp/action-hello-world@2.0.1
+      uses: rtCamp/hello-world@2.0.1
       env:
         SLACK_WEBHOOK: ${{secrets.SLACK_WEBHOOK_URL}}
   
