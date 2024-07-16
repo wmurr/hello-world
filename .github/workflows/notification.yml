@@ -3,10 +3,10 @@ name:Slack notfy demo
 jobs:
   slackNoticartion:
     name: Slack Notification
-run-on: ubuntu-latest
-steps:
-- name: Slack Notification
-  uses: rtCamp/aktion-slake-notify@2.0.1
-env:
-  SLACK_WEBHOOK: ${{secrets.SLACK_WEBHOOK_URL}}
+    run-on: ubuntu-latest
+    steps:
+    - name: Slack Notification
+      uses: rtCamp/aktion-slake-notify@2.0.1
+      env:
+        SLACK_WEBHOOK: ${{secrets.SLACK_WEBHOOK_URL}}
   
